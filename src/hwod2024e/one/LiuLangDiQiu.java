@@ -1,4 +1,4 @@
-package hwod2024e;
+package hwod2024e.one;
 
 import java.util.Scanner;
 
