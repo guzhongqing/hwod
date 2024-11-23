@@ -1,4 +1,4 @@
-package hwod2024e.one;
+package hwod2024e.onehundred;
 
 import java.util.Arrays;
 import java.util.Scanner;
