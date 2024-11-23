@@ -31,6 +31,7 @@ public class TLVJieMa {
 
         int point = 0;
         while (point < stream.length) {
+            // 每个信元的前三个字节是固定的
             String tag = stream[point++];
             String s1 = stream[point++];
             String s2 = stream[point++];
@@ -40,6 +41,7 @@ public class TLVJieMa {
 
             // 如果相等代表已经找到目标tag，直接输出，让后结束程序
             if (target.equals(tag)) {
+                // 根据左右边界确定value的索引，通过list的subList方法直接放入arraylist
                 ArrayList<String> ans = new ArrayList<>(Arrays.asList(stream).subList(point, point + len));
                 System.out.println(String.join(" ", ans));
                 break;
